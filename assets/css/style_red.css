@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color: #020024;
+    --gradient-60-color: #000000;
+    --gradient-100-color: #d9c500;
+    --text-color: #ffffff;
+    --black-transparent: rgba(0, 0, 0, 0.8);
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(45deg, var(--bg-color) 0%, var(--gradient-60-color) 60%, var(--gradient-100-color) 100%);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: var(--text-color);
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.fundo-conteudo {
+    min-height: 100vh;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.22);
+}
+
+.container {
+    min-height: calc(100vh - 40px);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #d9c500;
+    background-image: url('../images/background1.png');
+}
+
+#card1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#card2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100%;
+    padding: 30px;
+    background-color: #404040;
+    font-size: large;
+}
+
+.items_red_senha {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: min(600px, 100%);
+    margin-top: 100px;
+    font-size: 15px;
+}
+
+.cards {
+    display: flex;
+    align-items: center;
+}
+
+#logo_site {
+    width: 250px;
+    height: 250px;
+    margin-top: 15px;
+    border: 5px solid #ffffff;
+    border-radius: 50%;
+    background-color: #000000;
+}
+
+.etiquetas {
+    font-size: medium;
+}
+
+.inputs {
+    width: 100%;
+    height: 45px;
+    margin-top: 2px;
+    border: 0;
+    border-radius: 10px;
+}
+
+#text_cab,
+#text_red1 {
+    font-size: 30px;
+}
+
+#butt_validar_email,
+#butt_enviar_cod,
+#bot_redefinir {
+    margin-top: 80px;
+    padding: 10px;
+    border: 0;
+    border-radius: 10px;
+    background-color: #d9c500;
+    color: #404040;
+    font-size: x-large;
+    cursor: pointer;
+}
+
+@media (max-width: 800px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    #card1 {
+        display: none;
+    }
+
+    #card2 {
+        min-height: calc(100vh - 40px);
+    }
+
+    .items_red_senha {
+        margin-top: 70px;
+    }
+}
+
+/* Títulos em negrito (aplica-se a h1-h6 e classes comuns de títulos) */
+h1, h2, h3, h4, h5, h6,
+.title, .titulo, .card-title, .page-title {
+    font-weight: 700;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartControl - Dispositivos</title>
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/dispositivos.css">
+</head>
+
+<body class="pagina-nova">
+    <main class="fundo-pagina">
+        <header>
+            <nav class="navbar">
+                <div class="cabecalho">
+                    <div class="smartcontrol-wrapper"><button class="nav-brand" id="smartcontrol-btn" type="button"><img
+                                src="assets/images/logosmartcontrol.png" alt="Logo SmartControl"
+                                class="logo-smartcontrol"><span>Smart<span
+                                    class="amarelo">Control</span></span></button>
+                        <div class="submenu menu-principal" id="menu_principal">
+                            <ul>
+                                <li><a class="menu-botao" href="dashboardnovo.html">Início</a></li>
+                                <li><a class="menu-botao" href="dispositivos.html">Dispositivos</a></li>
+                                <li><a class="menu-botao" href="conexoes.html">Conexões</a></li>
+                                <li><a class="menu-botao" href="assistencia.html">Assistência</a></li>
+                                <li><a class="menu-botao" href="#">Cenas</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="nav-link pagina-atual">Dispositivos</div>
+                    <div class="profile-wrapper"><button class="avatar-button" id="avatar-btn" type="button"><img
+                                src="assets/images/profileimg.jpg" alt="Foto de perfil" id="avatar"></button>
+                        <div class="submenu menu-perfil" id="submenu_perfil">
+                            <ul>
+                                <li class="menu-info">Bem vindo(a), ZeroEsquerda</li>
+                                <li><a class="menu-botao" href="perfil.html">Perfil</a></li>
+                                <li><a class="menu-botao" href="configuracoes.html">Configurações</a></li>
+                                <li><a class="menu-botao" href="index.html">Log Out</a></li>
+                            </ul>
+                        </div>
+                    </div><button id="theme-toggle" class="theme-toggle" type="button">Modo escuro</button>
+                </div>
+            </nav>
+        </header>
+        <main class="tela tela-dispositivos">
+            <div class="lista-dispositivos">
+                <div class="dispositivo-item"><img src="assets/images/icone_tv.png" alt="TV"><span>TV</span></div>
+                <div class="dispositivo-item"><img src="assets/images/icone_raio.png" alt="Rádio"><span>Rádio</span>
+                </div>
+                <div class="dispositivo-item"><img src="assets/images/icone_lampada2.png"
+                        alt="Lâmpada"><span>Lâmpada</span></div>
+                <div class="dispositivo-item"><img src="assets/images/iconecamera.png"
+                        alt="Câmera"><span>Câmera</span><a class="botao botao-camera" href="camera.html">Abrir
+                        câmera</a></div><button class="adicionar-dispositivo" type="button">+ Adicionar
+                    Dispositivo</button>
+            </div>
+        </main>
+        <script src="assets/JS/main.js"></script>
+    </main>
+</body>
+
+</html>

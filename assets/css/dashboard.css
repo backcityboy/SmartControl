@@ -1,0 +1,187 @@
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 110px 20px 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "search search"
+        "sheet1 sheet1"
+        "sheet2 sheet3"
+        "sheet4 sheet5";
+    gap: 20px;
+}
+
+.search-container {
+    grid-area: search;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.search-container label {
+    font-weight: 600;
+}
+
+#card-search {
+    width: 100%;
+    padding: 13px 16px;
+    border: 1px solid var(--input-border);
+    border-radius: 10px;
+    background: var(--surface);
+    color: var(--text);
+    outline: none;
+    transition: background-color .35s ease, color .35s ease, border-color .35s ease;
+}
+
+#card-search:focus {
+    border-color: #777;
+}
+
+#cardsheet_cabeca {
+    grid-area: sheet1;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+#cardsheet_ambientes {
+    grid-area: sheet2;
+}
+
+#cardsheet_cenas {
+    grid-area: sheet3;
+}
+
+#cardsheet_favs {
+    grid-area: sheet4;
+}
+
+#cardsheet_consumo {
+    grid-area: sheet5;
+}
+
+.cardsheet {
+    background: var(--surface);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 8px var(--shadow);
+    transition: background-color .35s ease, box-shadow .35s ease;
+}
+
+.cards {
+    background: var(--card);
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    max-height: fit-content;
+}
+
+.cardinfo {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.images {
+    display: block;
+    flex: 0 0 50px;
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    background-color: #d9c500;
+    border-radius: 50%;
+    object-fit: contain;
+    object-position: center;
+    margin: 0;
+}
+
+.cards2 {
+    background: var(--card);
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.cards2 p {
+    flex: 1;
+}
+
+.playbutton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 auto;
+}
+
+.playbutton .images {
+    width: 36px;
+    height: 36px;
+    flex-basis: 36px;
+}
+
+.titulo_dispos,
+.titulo_cenas,
+.titulo_consumo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.graf {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    object-position: center;
+}
+
+footer {
+    padding: 30px 20px;
+    text-align: center;
+    transition: color .35s ease;
+}
+
+@media (max-width: 1100px) {
+    #cardsheet_cabeca {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 900px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "search"
+            "sheet1"
+            "sheet2"
+            "sheet3"
+            "sheet4"
+            "sheet5";
+    }
+
+    #cardsheet_cabeca {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    #cardsheet_cabeca {
+        grid-template-columns: 1fr;
+    }
+}

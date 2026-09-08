@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color: #020024;
+    --gradient-60-color: #000000;
+    --gradient-100-color: #d9c500;
+    --text-color: #ffffff;
+    --black-transparent: rgba(0, 0, 0, 0.8);
+    --black-transparent-2: rgba(0, 0, 0, 0.2);
+}
+
+body {
+    background: var(--bg-color);
+    background: linear-gradient(45deg, var(--bg-color) 0%, var(--gradient-60-color) 60%, var(--gradient-100-color) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: var(--text-color);
+    font-family: "Inter", "sans-serif";
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.container {
+    height: 100dvh;
+    display: grid;
+    background-color: #d9c500;
+    
+    grid-template-columns: 1fr 1fr;
+    background-image: url('../images/background1.png');
+}
+
+#card1 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20%;
+    margin: 30%;
+    
+}
+
+#card2 {
+    display: flex;
+    justify-content: right;
+    align-self: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #404040;
+    height: 100%;
+    width: 100%;
+    font-size: large;
+    max-height: 100%;
+}
+
+.itens_cadastro{
+    display: flex;
+    flex-direction: column;
+    margin: 10%;
+    font-size: 15px;
+}
+
+.cards{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#logo_site{
+    width: 250px;
+    height: 250px;
+    background-color: #000000;
+    margin-top: 15px;
+    border: 5px solid #ffffff;
+    border-radius: 50%; 
+}
+
+.cadastro-return{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 20px;
+    margin-top: 20%;
+    justify-content: space-between;
+    font-size: x-large;
+}
+
+.etiquetas{
+    font-size: medium;
+    margin-top: 20px;
+    justify-self: auto;
+}
+
+.inputs{
+    height: 45px;
+    width: 600px;
+    margin-top: 2px;
+    border-radius: 10px;
+}
+
+#text_cadastro{
+    
+    margin-top: 20%;
+    font-size: 30px;
+}
+
+.nivel-check{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#cadastrar_button{
+    color: #404040;
+    background-color: #d9c500;
+    padding: 10px;
+    font-size: x-large;
+    border-radius: 10px;
+}
+
+#return_button{
+    color: #404040;
+    background-color: #ffe120;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+/* Títulos em negrito (aplica-se a h1-h6 e classes comuns de títulos) */
+h1, h2, h3, h4, h5, h6,
+.title, .titulo, .card-title, .page-title {
+    font-weight: 700;
+}

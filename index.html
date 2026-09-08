@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartControl - Login</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    
+    <header class="cabecalho" id="cabecalho">
+        
+    </header>
+
+    <main class="container">
+        <div class="card2" id="login_info">
+            <h1 id="text_login">Login</h1>
+            <form method="get" action="dashboardnovo.html" class="login_items">
+                <label for="email" class="etiquetas_login">E-mail:</label>
+                <input type="email" class="inputs_login" name="email" id="email" placeholder="Insira seu e-mail" required>
+
+                <label for="senha" class="etiquetas_login">Senha:</label>
+                <input type="password" class="inputs_login" name="senha" id="senha" placeholder="Insira sua senha" minlength="8" required>
+                <a href="senha1.html" id="esqueci_senha">Esqueci minha senha</a>
+                <button type="submit" class="button_login"><b>Fazer Login</b></button>
+                <div class="cadastro_redirect" id="cad_red">
+                    <p>Não possui uma conta?</p>
+                    <a href="cadastro.html" id="butt_cad_redirect">Cadastre-se</a>
+                </div>
+            </form>
+        </div>
+        <div class="card1" id="card1">
+            <nav>
+                
+                <img src="assets/images/logosmartcontrol.png" alt="logo" id="logo_site">
+            </nav>
+        </div>
+    </main>
+</html>

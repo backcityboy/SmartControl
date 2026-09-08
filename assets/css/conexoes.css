@@ -1,0 +1,110 @@
+.tela-conexoes {
+    max-width: 900px;
+    padding-top: 110px;
+}
+
+.barra-pesquisa {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 22px;
+    align-items: center;
+}
+
+.barra-pesquisa input {
+    min-width: 0;
+    flex: 1;
+    padding: 14px 18px;
+    border: 0;
+    border-radius: 10px;
+    background: #dbdbdb;
+    color: #111;
+    font-size: 17px;
+}
+
+.lista-conexoes {
+    width: min(720px, 100%);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+}
+
+.perfil-conexao {
+    min-height: 72px;
+    padding: 10px 16px;
+    margin: 0;
+    background: var(--card);
+    color: var(--text);
+    border-radius: 13px;
+    cursor: pointer;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, .18);
+}
+
+.foto-conexao {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    object-fit: cover;
+    flex: 0 0 44px;
+}
+
+.perfil-conexao h3 {
+    font-weight: 400;
+    font-size: 17px;
+}
+
+.perfil-conexao p {
+    font-size: 13px;
+    color: var(--muted);
+}
+
+.topo-perfil-modal {
+    position: relative;
+}
+
+.banner-perfil {
+    display: block;
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.foto-perfil-modal {
+    position: absolute;
+    left: 50%;
+    bottom: -48px;
+    transform: translateX(-50%);
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    object-fit: cover;
+}
+
+.info-perfil {
+    padding: 62px 28px 30px;
+    text-align: center;
+}
+
+.info-perfil h2 {
+    font-size: 27px;
+    font-weight: 400;
+    margin-bottom: 7px;
+}
+
+.info-perfil p {
+    margin-bottom: 25px;
+    color: #ddd;
+}
+
+.info-perfil .botao {
+    width: 100%;
+}
+
+@media (max-width: 700px) {
+    .barra-pesquisa {
+        flex-direction: column;
+    }
+}
+

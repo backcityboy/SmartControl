@@ -1,0 +1,72 @@
+.tela-dispositivos {
+    max-width: 1010px;
+}
+
+.lista-dispositivos {
+    width: min(740px, 100%);
+    margin: 30px auto;
+    display: grid;
+    gap: 17px;
+}
+
+.dispositivo-item {
+    min-height: 78px;
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    padding: 12px 24px;
+    border-radius: 13px;
+    background: var(--card);
+    color: var(--text);
+}
+
+.dispositivo-item img {
+    width: 54px;
+    height: 54px;
+    object-fit: contain;
+    border-radius: 0;
+    background: transparent;
+    flex: 0 0 54px;
+}
+
+.dispositivo-item span {
+    font-size: 23px;
+    flex: 1;
+}
+
+.botao-camera {
+    background: #d9c500;
+    color: #111;
+}
+
+.adicionar-dispositivo {
+    min-height: 70px;
+    border: 0;
+    border-radius: 13px;
+    background: #626262;
+    color: #fff;
+    font: inherit;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.dispositivo-item:hover {
+    filter: brightness(1.05);
+}
+
+@media (max-width: 560px) {
+    .dispositivo-item {
+        padding: 10px 14px;
+        gap: 12px;
+    }
+
+    .dispositivo-item span {
+        font-size: 18px;
+    }
+
+    .botao-camera {
+        padding: 9px 10px;
+        font-size: 13px;
+    }
+}
+

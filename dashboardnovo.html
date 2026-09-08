@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartControl - Dashboard</title>
+    
+<link rel="stylesheet" href="assets/css/base.css">
+<link rel="stylesheet" href="assets/css/dashboard.css">
+</head>
+
+<body>
+
+    <header>
+    <nav class="navbar">
+        <div class="cabecalho">
+            <div class="smartcontrol-wrapper">
+                <button class="nav-brand" id="smartcontrol-btn" type="button">
+                    <img src="assets/images/logosmartcontrol.png" alt="Logo SmartControl" class="logo-smartcontrol">
+                    <span>Smart<span class="amarelo">Control</span></span>
+                </button>
+                <div class="submenu menu-principal" id="menu_principal">
+                    <ul>
+                        <li><a class="menu-botao" href="dashboardnovo.html">Início</a></li>
+                        <li><a class="menu-botao" href="dispositivos.html">Dispositivos</a></li>
+                        <li><a class="menu-botao" href="conexoes.html">Conexões</a></li>
+                        <li><a class="menu-botao" href="assistencia.html">Assistência</a></li>
+                        <li><a class="menu-botao" href="#">Cenas</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="nav-link pagina-atual">Início</div>
+            <div class="profile-wrapper">
+                <button class="avatar-button" id="avatar-btn" type="button">
+                    <img src="assets/images/profileimg.jpg" alt="Foto de perfil" id="avatar">
+                </button>
+                <div class="submenu menu-perfil" id="submenu_perfil">
+                    <ul>
+                        <li>Bem vindo(a), ZeroEsquerda</li>
+                        <li><a class="menu-botao" href="perfil.html">Perfil</a></li>
+                        <li><a class="menu-botao" href="configuracoes.html">Configurações</a></li>
+                        <li><a class="menu-botao" href="index.html">Log Out</a></li>
+                    </ul>
+                </div>
+            </div>
+            <button id="theme-toggle" class="theme-toggle" type="button">Modo escuro</button>
+        </div>
+    </nav>
+</header>
+
+    <main class="container">
+        <div class="search-container">
+            <label for="card-search">Pesquisar no dashboard</label>
+            <input type="search" id="card-search" placeholder="Pesquisar cards..." autocomplete="off">
+        </div>
+
+        <div class="cardsheet" id="cardsheet_cabeca">
+            <div class="cards" id="card_consumo">
+                    <img src="assets/images/icone_raio.png" alt="icon1" class="images" id="icone_consumo">
+                <div class="cardinfo" id="info_consumo">
+                    <h2 class="infos">Consumo de energia</h2>
+                    <p class="infos">12.4 kW/h</p>
+                    <p class="infos">8% a mais que ontem</p>
+                </div>
+            </div>
+
+            <div class="cards" id="card_dispositivos">
+                <img src="assets/images/icone_lampada1.png" alt="icon1" class="images" id="icone_dispositivos">
+                <div class="cardinfo" id="info_dispositivos">
+                    <h2>Dispositivos Ativos</h2>
+                    <p class="infos">12 Dispositivos</p>
+                    <p class="infos">de 19 dispositivos</p>
+                </div>
+            </div>
+
+            <div class="cards" id="cardtemp">
+                <img src="assets/images/icone_termo.png" alt="icon1" class="images" id="icone_temperatura">
+                <div class="cardinfo" id="info_temp">
+                    <h2>Temperatura Média</h2>
+                    <p class="infos">28° C</p>
+                    <p class="infos">Sala de estar</p>
+                </div>
+            </div>
+
+            <div class="cards" id="card_seguranca">
+                <img src="assets/images/icone_escudo.png" alt="icon1" class="images" id="icone_seguranca">
+                <div class="cardinfo" id="info_seguranca">
+                    <h2>Segurança</h2>
+                    <p class="infos">Tudo seguro</p>
+                    <p class="infos">Nenhum alerta</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="cardsheet" id="cardsheet_ambientes">
+            <div id="titulo_ambientes"><h3>Ambientes</h3></div>
+
+            <div class="cards" id="cardsala">
+                <img src="assets/images/icone_sofa.png" alt="icon1" class="images" id="icone_sala">
+                <div class="cardinfo" id="infosala">
+                    <p>Sala de Estar</p>
+                    <p>X dispositivos</p>
+                </div>
+            </div>
+
+            <div class="cards" id="cardcozinha">
+                <img src="assets/images/icone_panela.png" alt="icon1" class="images" id="icone_cozinha">
+                <div class="cardinfo" id="info_cozinha">
+                    <p>Cozinha</p>
+                    <p>X dispositivos</p>
+                </div>
+            </div>
+
+            <div class="cards" id="cardquarto">
+                <img src="assets/images/icone_cama.png" alt="icon1" class="images" id="icone_quarto">
+                <div class="cardinfo" id="info_quarto">
+                    <p>Quarto</p>
+                    <p>X dispositivos</p>
+                </div>
+            </div>
+
+            <div class="cards" id="cardescritorio">
+                <img src="assets/images/icone_cadeira.png" alt="icon1" class="images" id="icone_escritorio">
+                <div class="cardinfo" id="info_garagem">
+                    <p>Escritório</p>
+                    <p>X dispositivos</p>
+                </div>
+            </div>
+
+            <div class="cards" id="cardbanheiro">
+                <img src="assets/images/icone_chuveiro.png" alt="icon1" class="images" id="icone_banheiro">
+                <div class="cardinfo" id="info_banheiro">
+                    <p>Banheiro</p>
+                    <p>X dispositivos</p>
+                </div>
+            </div>
+
+            <div class="cards" id="cardgaragem">
+                <img src="assets/images/icone_carro.png" alt="icon1" class="images" id="icone_garagem">
+                <div class="cardinfo" id="info_garagem">
+                    <p>Garagem</p>
+                    <p>X dispositivos</p>
+                </div>
+            </div>
+
+            </div>
+        </div>
+        <div class="cardsheet" id="cardsheet_cenas">
+            <div class="titulo_cenas">
+                <h3>Cenas Rápidas</h3>
+                <p>Ver todas</p>
+            </div>
+
+            <div class="cards2" id="chegandocasa">
+                <img src="assets/images/iconecasa.png" alt="icon1" class="images" id="cena_chegar">
+                <p>Cheguei em casa</p>
+                <div class="playbutton">
+                    <img src="assets/images/iconeplay.png" alt="icon1" class="images" id="playbutton">
+                </div>
+            </div>
+
+            <div class="cards2" id="saindocasa">
+                <img src="assets/images/iconecadeado.png" alt="icon1" class="images" id="cena_sair">
+                <p>Saindo de casa</p>
+                <div class="playbutton">
+                    <img src="assets/images/iconeplay.png" alt="icon1" class="images" id="playbutton2">
+                </div>
+            </div>
+
+            <div class="cards2" id="noiecinema">
+                <img src="assets/images/iconecamera.png" alt="icon1" class="images" id="cena_cinema">
+                <p>Noite de Cinema</p>
+                <div class="playbutton">
+                    <img src="assets/images/iconeplay.png" alt="icon1" class="images" id="playbutton3">
+                </div>
+            </div>
+
+            <div class="cards2" id="horamimir">
+                <img src="assets/images/iconelua.png" alt="icon1" class="images" id="cena_dormir">
+                <p>Hora de Dormir</p>
+                <div class="playbutton">
+                    <img src="assets/images/iconeplay.png" alt="icon1" class="images" id="playbutton4">
+                </div>
+            </div>
+        </div>
+
+        <div class="cardsheet" id="cardsheet_favs">
+            <div class="titulo_dispos">
+                <h3>Dispositivos Favoritos</h3>
+                <p>ver todos</p>
+            </div>
+
+            <div class="cards" id="fav_luzsala">
+                <img src="assets/images/icone_lampada2.png" alt="icon1" class="images" id="icone_luzsala">
+                <div class="cardinfo" id="infoquarto">
+                    <p><b>Luz da sala</b></p>
+                    <p>Sala de estar</p>
+                    <p>100%</p>
+                </div>
+            </div>
+
+            <div class="cards" id="fav_ar">
+                <img src="assets/images/icone_neve.png" alt="icon1" class="images" id="icone_ar">
+                <div class="cardinfo" id="infogaragem">
+                    <p><b>Ar condicionado</b></p>
+                    <p>Sala de estar</p>
+                    <p>22°C</p>
+                </div>
+            </div>
+
+            <div class="cards" id="fav_tv">
+                <img src="assets/images/icone_tv.png" alt="icon1" class="images" id="icone_tv">
+                <div class="cardinfo" id="card9">
+                    <p><b>TV</b></p>
+                    <p>Sala de estar</p>
+                    <p>Desligado</p>
+                </div>
+            </div>
+
+            <div class="cards" id="fav_cortina">
+                <img src="assets/images/icone_janela.png" alt="icon1" class="images" id="icone_cortina">
+                <div class="cardinfo" id="info_cortina">
+                    <p><b>Cortina</b></p>
+                    <p>Quarto</p>
+                    <p>Aberta 80%</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="cardsheet" id="cardsheet_consumo">
+            <div class="titulo_consumo">
+                <label for="classificacao"><h3>Consumo de energia médio:</h3></label>
+                <select name="classificacao" id="classificacao">
+                    <option value="" selected>Hoje</option>
+                    <option value="tecnico">Semanal</option>
+                    <option value="cliente">Mensal</option>
+                    <option value="admin">Todos os tempos</option>
+                </select>
+            </div>
+            <div class="cards" id="seila">
+                <div id="content">
+                    <p>12.4 kW/h</p>
+                    <img src="assets/images/grafico.png" alt="icon1" class="graf" id="grafico_consumo">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Testando o rodapé.</p>
+        <a href="https://pedrotech.com.br/pedrolandia/">Sites de apoio</a>
+
+    </footer>
+    <script src="assets/JS/main.js"></script>
+</body>
+</html>

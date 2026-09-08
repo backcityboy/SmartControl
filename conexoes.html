@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>SmartControl - Conexões</title>
+    <link href="assets/css/base.css" rel="stylesheet">
+    <link href="assets/css/conexoes.css" rel="stylesheet">
+</head>
+
+<body class="pagina-nova">
+    <main class="fundo-pagina">
+        <header>
+            <nav class="navbar">
+                <div class="cabecalho">
+                    <div class="smartcontrol-wrapper"><button class="nav-brand" id="smartcontrol-btn" type="button"><img
+                                alt="Logo SmartControl" class="logo-smartcontrol"
+                                src="assets/images/logosmartcontrol.png"><span>Smart<span
+                                    class="amarelo">Control</span></span></button>
+                        <div class="submenu menu-principal" id="menu_principal">
+                            <ul>
+                                <li><a class="menu-botao" href="dashboardnovo.html">Início</a></li>
+                                <li><a class="menu-botao" href="dispositivos.html">Dispositivos</a></li>
+                                <li><a class="menu-botao" href="conexoes.html">Conexões</a></li>
+                                <li><a class="menu-botao" href="assistencia.html">Assistência</a></li>
+                                <li><a class="menu-botao" href="#">Cenas</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="nav-link pagina-atual">Conexões</div>
+                    <div class="profile-wrapper"><button class="avatar-button" id="avatar-btn" type="button"><img
+                                alt="Foto de perfil" id="avatar" src="assets/images/profileimg.jpg"></button>
+                        <div class="submenu menu-perfil" id="submenu_perfil">
+                            <ul>
+                                <li class="menu-info">Bem vindo(a), ZeroEsquerda</li>
+                                <li><a class="menu-botao" href="perfil.html">Perfil</a></li>
+                                <li><a class="menu-botao" href="configuracoes.html">Configurações</a></li>
+                                <li><a class="menu-botao" href="index.html">Log Out</a></li>
+                            </ul>
+                        </div>
+                    </div><button class="theme-toggle" id="theme-toggle" type="button">Modo escuro</button>
+                </div>
+            </nav>
+        </header>
+        <main class="tela tela-conexoes">
+            <div class="barra-pesquisa"><input autocomplete="off" id="pesquisa_pessoas"
+                    placeholder="Pesquisar amigos..." type="search"><button class="botao botao-amarelo" type="button">+
+                    Adicionar conexão</button></div>
+            <div class="lista-cards lista-conexoes">
+                <div class="cards card-clicavel perfil-conexao" data-banner="assets/images/fundo-diego.gif"
+                    data-email="ZeroEsquerda@gmail.com" data-nome="Euzinhoo" data-src="assets/images/profileimg.jpg">
+                    <img alt="Foto de perfil" class="foto-conexao" src="assets/images/profileimg.jpg">
+                    <div class="cardinfo">
+                        <h3>ZeroEsquerda</h3>
+                        <p>ZeroEsquerda@gmail.com</p>
+                    </div>
+                </div>
+                <div class="cards card-clicavel perfil-conexao" data-banner="assets/images/fundo-manu.gif"
+                    data-email="TudoErrado@gmail.com" data-nome="TudoErrado" data-src="assets/images/foto-manu.jpeg">
+                    <img alt="Foto de perfil" class="foto-conexao" src="assets/images/foto-manu.jpeg">
+                    <div class="cardinfo">
+                        <h3>TudoErrado</h3>
+                        <p>TudoErrado@gmail.com</p>
+                    </div>
+                </div>
+                <div class="cards card-clicavel perfil-conexao" data-banner="assets/images/fundo-yan.gif"
+                    data-email="SabeNada@gmail.com" data-nome="SabeNada" data-src="assets/images/foto-yan.jpg"><img
+                        alt="Foto de perfil" class="foto-conexao" src="assets/images/foto-yan.jpg">
+                    <div class="cardinfo">
+                        <h3>SabeNada</h3>
+                        <p>SabeNada@gmail.com</p>
+                    </div>
+                </div>
+                <div class="cards card-clicavel perfil-conexao" data-banner="assets/images/fundo-matheus.gif"
+                    data-email="PiorAinda@gmail.com" data-nome="PiorAinda" data-src="assets/images/foto-matheus.jpg">
+                    <img alt="Foto de perfil" class="foto-conexao" src="assets/images/foto-matheus.jpg">
+                    <div class="cardinfo">
+                        <h3>PiorAinda</h3>
+                        <p>PiorAinda@gmail.com</p>
+                    </div>
+                </div>
+                <div class="cards card-clicavel perfil-conexao" data-banner="assets/images/fundo-bernardo.gif"
+                    data-email="FazNada@gmail.com" data-nome="FazNada" data-src="assets/images/foto-bernardo.jpg"><img
+                        alt="Foto de perfil" class="foto-conexao" src="assets/images/foto-bernardo.jpg">
+                    <div class="cardinfo">
+                        <h3>FazNada</h3>
+                        <p>FazNada@email.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-fundo" id="modal_perfil">
+                <div class="modal-perfil-card"><button class="fechar-modal fechar-perfil" type="button">x</button>
+                    <div class="topo-perfil-modal"><img alt="Banner" class="banner-perfil" id="modal_banner"
+                            src="assets/images/placeholder_camera3.png"><img alt="Foto de perfil"
+                            class="foto-perfil-modal" id="modal_foto" src="assets/images/profileimg.jpg"></div>
+                    <div class="info-perfil">
+                        <h2 id="modal_apelido">placeholder</h2>
+                        <p id="modal_email">placeholder@email.com</p><button class="botao botao-vermelho"
+                            type="button">Remover conexão</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script src="assets/JS/main.js"></script>
+    </main>
+</body>
+
+</html>

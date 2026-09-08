@@ -1,0 +1,204 @@
+.pagina-camera {
+    margin: 0;
+    background: #000;
+    color: #fff;
+    overflow: hidden;
+}
+
+.camera-interface {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #000;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.camera-interface::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,.28);
+    z-index: 0;
+    pointer-events: none;
+}
+
+.camera-titulo {
+    position: absolute;
+    top: 28px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 38px;
+    z-index: 5;
+}
+
+.camera-fechar {
+    position: absolute;
+    top: 16px;
+    right: 28px;
+    z-index: 5;
+    width: 66px;
+    height: 66px;
+    display: grid;
+    place-items: center;
+    border-radius: 12px;
+    background: #c77ca3;
+    color: #fff;
+    text-decoration: none;
+    font-size: 58px;
+    line-height: 1;
+}
+
+.camera-sobreposicao {
+    position: absolute;
+    top: 38px;
+    left: 35px;
+    right: 35px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 28px;
+    z-index: 2;
+}
+
+.camera-rec {
+    color: #fff;
+}
+
+.camera-rec::first-letter {
+    color: red;
+}
+
+.camera-bateria {
+    color: #d9c500;
+}
+
+.camera-mira {
+    position: absolute;
+    width: 165px;
+    height: 110px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border: 3px solid rgba(255,255,255,.6);
+    z-index: 2;
+}
+
+.camera-mira::before,
+.camera-mira::after {
+    content: '';
+    position: absolute;
+    background: rgba(255,255,255,.6);
+}
+
+.camera-mira::before {
+    width: 3px;
+    height: 20px;
+    left: 50%;
+    top: -3px;
+}
+
+.camera-mira::after {
+    width: 20px;
+    height: 3px;
+    left: -3px;
+    top: 50%;
+}
+
+.camera-informacoes {
+    position: absolute;
+    bottom: 25px;
+    left: 35px;
+    right: 35px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 17px;
+    z-index: 2;
+}
+
+.camera-seta {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 5;
+    border: 0;
+    background: transparent;
+    color: #fff;
+    font-size: 90px;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.camera-esquerda {
+    left: 3%;
+}
+
+.camera-direita {
+    right: 3%;
+}
+
+.camera-voltar {
+    position: absolute;
+    bottom: 18px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
+    padding: 10px 20px;
+    border-radius: 9px;
+    background: #fff;
+    color: #111;
+    text-decoration: none;
+}
+
+@media (max-width: 800px) {
+    .camera-titulo {
+        font-size: 28px;
+    }
+
+    .camera-fechar {
+        width: 52px;
+        height: 52px;
+        right: 14px;
+        top: 10px;
+        font-size: 44px;
+    }
+
+    .camera-seta {
+        font-size: 65px;
+    }
+
+    .camera-sobreposicao {
+        font-size: 16px;
+        top: 16px;
+        left: 15px;
+        right: 15px;
+    }
+
+    .camera-informacoes {
+        font-size: 12px;
+        left: 15px;
+        right: 15px;
+        bottom: 10px;
+    }
+}
+
+@media (max-width: 560px) {
+    .camera-esquerda {
+        left: 0;
+    }
+
+    .camera-direita {
+        right: 0;
+    }
+}
+
+/* Títulos em negrito (aplica-se a h1-h6 e classes comuns de títulos) */
+h1, h2, h3, h4, h5, h6,
+.title, .titulo, .card-title, .page-title {
+    font-weight: 700;
+}

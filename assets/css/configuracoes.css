@@ -1,0 +1,176 @@
+.tela-configuracoes-menu {
+    max-width: 1100px;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 360px 1fr;
+    padding: 0;
+}
+
+.menu-configuracoes {
+    background: var(--card);
+    padding: 95px 36px 36px;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    transition: background-color .35s ease;
+}
+
+.botao-configuracao {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    width: 100%;
+    min-height: 72px;
+    padding: 14px 22px;
+    border: 0;
+    border-radius: 12px;
+    background: #373737;
+    color: #fff;
+    font: inherit;
+    font-size: 23px;
+    text-align: left;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.botao-configuracao.ativo {
+    background: #2a2a2a;
+}
+
+.botao-configuracao:hover {
+    filter: brightness(1.08);
+}
+
+.sair-configuracao {
+    margin-top: auto;
+    background: #c77ca3;
+}
+
+.conteudo-configuracao {
+    min-width: 0;
+    background: var(--bg);
+    padding: 0 60px 54px;
+    overflow: auto;
+    transition: background-color .35s ease;
+}
+
+.painel-configuracao {
+    display: none;
+    padding-top: 0;
+}
+
+.painel-configuracao.ativo {
+    display: block;
+}
+
+.painel-configuracao h1 {
+    margin: 0 -60px 64px;
+    padding: 0 60px;
+    min-height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: 500;
+    border-bottom: 1px solid rgba(255,255,255,.06);
+}
+
+.painel-configuracao p {
+    font-size: 18px;
+    margin-bottom: 28px;
+}
+
+.campo-config {
+    padding: 20px 0;
+    border-bottom: 3px dashed rgba(255,255,255,.7);
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.campo-config strong {
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.campo-config span {
+    font-size: 18px;
+}
+
+.aviso-config {
+    padding: 20px;
+    border-radius: 12px;
+    background: var(--card);
+    color: var(--text);
+}
+
+@media (max-width: 850px) {
+    .tela-configuracoes-menu {
+        grid-template-columns: 250px 1fr;
+    }
+
+    .menu-configuracoes {
+        padding: 80px 20px 30px;
+        gap: 20px;
+    }
+
+    .botao-configuracao {
+        font-size: 19px;
+        min-height: 65px;
+        padding: 12px 16px;
+    }
+
+    .conteudo-configuracao {
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+
+    .painel-configuracao h1 {
+        margin-left: -35px;
+        margin-right: -35px;
+        padding-left: 35px;
+        padding-right: 35px;
+        font-size: 29px;
+    }
+
+    .campo-config strong {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 650px) {
+    .tela-configuracoes-menu {
+        display: block;
+        padding-top: 80px;
+    }
+
+    .menu-configuracoes {
+        padding: 20px 15px;
+        gap: 10px;
+    }
+
+    .botao-configuracao {
+        min-height: 55px;
+        font-size: 17px;
+    }
+
+    .sair-configuracao {
+        margin-top: 10px;
+    }
+
+    .conteudo-configuracao {
+        padding: 0 20px 40px;
+    }
+
+    .painel-configuracao h1 {
+        margin: 0 -20px 45px;
+        padding: 0 20px;
+        min-height: 65px;
+        font-size: 24px;
+    }
+
+    .campo-config strong {
+        font-size: 21px;
+    }
+}
+

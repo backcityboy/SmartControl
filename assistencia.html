@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>SmartControl - Assistência</title>
+    <link href="assets/css/base.css" rel="stylesheet">
+    <link href="assets/css/assistencia.css" rel="stylesheet">
+</head>
+
+<body class="pagina-nova">
+    <main class="fundo-pagina">
+        <header>
+            <nav class="navbar">
+                <div class="cabecalho">
+                    <div class="smartcontrol-wrapper"><button class="nav-brand" id="smartcontrol-btn" type="button"><img
+                                alt="Logo SmartControl" class="logo-smartcontrol"
+                                src="assets/images/logosmartcontrol.png"><span>Smart<span
+                                    class="amarelo">Control</span></span></button>
+                        <div class="submenu menu-principal" id="menu_principal">
+                            <ul>
+                                <li><a class="menu-botao" href="dashboardnovo.html">Início</a></li>
+                                <li><a class="menu-botao" href="dispositivos.html">Dispositivos</a></li>
+                                <li><a class="menu-botao" href="conexoes.html">Conexões</a></li>
+                                <li><a class="menu-botao" href="assistencia.html">Assistência</a></li>
+                                <li><a class="menu-botao" href="#">Cenas</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="nav-link pagina-atual">Assistência</div>
+                    <div class="profile-wrapper"><button class="avatar-button" id="avatar-btn" type="button"><img
+                                alt="Foto de perfil" id="avatar" src="assets/images/profileimg.jpg"></button>
+                        <div class="submenu menu-perfil" id="submenu_perfil">
+                            <ul>
+                                <li class="menu-info">Bem vindo(a), ZeroEsquerda</li>
+                                <li><a class="menu-botao" href="perfil.html">Perfil</a></li>
+                                <li><a class="menu-botao" href="configuracoes.html">Configurações</a></li>
+                                <li><a class="menu-botao" href="index.html">Log Out</a></li>
+                            </ul>
+                        </div>
+                    </div><button class="theme-toggle" id="theme-toggle" type="button">Modo escuro</button>
+                </div>
+            </nav>
+        </header>
+        <main class="tela tela-assistencia">
+            <div class="grade-assistencia"><button class="card-assistencia" data-modal="modal_quem"
+                    type="button"><span>Sobre Nós</span><img alt="Placeholder sobre nós"
+                        src="assets/images/sobre-nos.png"></button><button class="card-assistencia"
+                    data-modal="modal_faq" type="button"><span>Perguntas Frequentes</span><img
+                        alt="Placeholder perguntas frequentes" src="assets/images/perguntas-frequentes.jpg"></button><a
+                    class="card-assistencia" href="loja.html"><span>Loja Virtual</span><img alt="Placeholder loja"
+                        src="assets/images/loja-virtual.jpg"></a><button class="card-assistencia"
+                    data-modal="modal_contato" type="button"><span>Contate-nos</span><img alt="Placeholder contato"
+                        src="assets/images/contate-nos.jpg"></button></div>
+            <div class="modal-fundo" id="modal_quem">
+                <div class="modal-card modal-assistencia"><button class="fechar-modal" type="button">×</button>
+                    <h2>Sobre Nós</h2>
+                    <h3>Quem somos:</h3>
+                    <p>Somos uma empresa focada em automação residencial.</p>
+                    <h3>O que buscamos:</h3>
+                    <p>Buscamos praticidade e segurança para sua residência.</p>
+                </div>
+            </div>
+            <div class="modal-fundo" id="modal_faq">
+                <div class="modal-card modal-assistencia"><button class="fechar-modal" type="button">×</button>
+                    <h2>Perguntas Frequentes</h2>
+                    <h3>Como adiciono um dispositivo?</h3>
+                    <p>Acesse a tela de Dispositivos e use a opção de adicionar aparelho.</p>
+                    <h3>Posso personalizar a aparência?</h3>
+                    <p>Sim. Acesse Configurações e depois Personalização.</p>
+                </div>
+            </div>
+            <div class="modal-fundo" id="modal_contato">
+                <div class="modal-card modal-assistencia"><button class="fechar-modal" type="button">×</button>
+                    <h2>Contate-nos</h2>
+                    <p>Email: SmartEmpresa@email.com</p>
+                    <p>Telefone: +55 (32) 98699-6742</p>
+                    <p>Horário Atendimento: das 07:00 às 18:00</p>
+                </div>
+            </div>
+        </main>
+        <script src="assets/JS/main.js"></script>
+    </main>
+</body>
+
+</html>

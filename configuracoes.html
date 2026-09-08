@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>SmartControl - Configurações</title>
+    <link href="assets/css/base.css" rel="stylesheet">
+    <link href="assets/css/configuracoes.css" rel="stylesheet">
+</head>
+
+<body class="pagina-nova pagina-configuracoes">
+    <main class="fundo-pagina">
+        <header>
+            <nav class="navbar">
+                <div class="cabecalho">
+                    <div class="smartcontrol-wrapper"><button class="nav-brand" id="smartcontrol-btn" type="button"><img
+                                alt="Logo SmartControl" class="logo-smartcontrol"
+                                src="assets/images/logosmartcontrol.png"><span>Smart<span
+                                    class="amarelo">Control</span></span></button>
+                        <div class="submenu menu-principal" id="menu_principal">
+                            <ul>
+                                <li><a class="menu-botao" href="dashboardnovo.html">Início</a></li>
+                                <li><a class="menu-botao" href="dispositivos.html">Dispositivos</a></li>
+                                <li><a class="menu-botao" href="conexoes.html">Conexões</a></li>
+                                <li><a class="menu-botao" href="assistencia.html">Assistência</a></li>
+                                <li><a class="menu-botao" href="#">Cenas</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="nav-link pagina-atual">Configurações</div>
+                    <div class="profile-wrapper"><button class="avatar-button" id="avatar-btn" type="button"><img
+                                alt="Foto de perfil" id="avatar" src="assets/images/profileimg.jpg"></button>
+                        <div class="submenu menu-perfil" id="submenu_perfil">
+                            <ul>
+                                <li class="menu-info">Bem vindo(a), ZeroEsquerda</li>
+                                <li><a class="menu-botao" href="perfil.html">Perfil</a></li>
+                                <li><a class="menu-botao" href="configuracoes.html">Configurações</a></li>
+                                <li><a class="menu-botao" href="index.html">Log Out</a></li>
+                            </ul>
+                        </div>
+                    </div><button class="theme-toggle" id="theme-toggle" type="button">Modo claro</button>
+                </div>
+            </nav>
+        </header>
+        <main class="tela tela-configuracoes-menu">
+            <aside class="menu-configuracoes"><button class="botao-configuracao ativo" data-config="informacoes"
+                    type="button">▦<span>Informações</span></button><button class="botao-configuracao"
+                    data-config="seguranca" type="button">♧<span>Segurança</span></button><button
+                    class="botao-configuracao" data-config="privacidade"
+                    type="button">◉<span>Privacidade</span></button><button class="botao-configuracao"
+                    data-config="pagamento" type="button">🛒<span>Pagamento</span></button><button
+                    class="botao-configuracao" data-config="personalizacao"
+                    type="button">⚙<span>Personalização</span></button><a class="botao-configuracao sair-configuracao"
+                    href="index.html">↪<span>Log Out</span></a></aside>
+            <section class="conteudo-configuracao">
+                <div class="painel-configuracao ativo" id="config_informacoes">
+                    <h1>Informações da conta</h1>
+                    <div class="campo-config"><strong>Nome Completo:</strong><span>ZeroEsquerda</span></div>
+                    <div class="campo-config"><strong>E-mail de Acesso:</strong><span>ZeroEsquerda@gmail.com</span>
+                    </div>
+                    <div class="campo-config"><strong>ID da conta:</strong><span>#0106742</span></div>
+                    <div class="campo-config"><strong>Telefone:</strong><span>+55 (16) 98121-6090</span></div>
+                    <div class="campo-config"><strong>Data de criação:</strong><span>24/08/2006</span></div>
+                </div>
+                <div class="painel-configuracao" id="config_seguranca">
+                    <h1>Segurança</h1>
+                    <p>Gerencie as opções de segurança da sua conta.</p><label class="interruptor"><input
+                            type="checkbox"><span></span>Solicitar confirmação ao entrar em um novo
+                        dispositivo</label><label class="interruptor"><input type="checkbox"><span></span>Notificar
+                        alterações importantes da conta</label>
+                </div>
+                <div class="painel-configuracao" id="config_privacidade">
+                    <h1>Privacidade</h1>
+                    <p>Controle quais informações ficam visíveis para outras pessoas.</p><label
+                        class="interruptor"><input type="checkbox"><span></span>Permitir que outros usuários visualizem
+                        os dados do seu perfil</label><label class="interruptor"><input
+                            type="checkbox"><span></span>Aceitar convites de projetos automaticamente</label>
+                </div>
+                <div class="painel-configuracao" id="config_pagamento">
+                    <h1>Pagamento</h1>
+                    <p>As informações de pagamento aparecerão aqui.</p>
+                    <div class="aviso-config">Nenhum método de pagamento cadastrado.</div>
+                </div>
+                <div class="painel-configuracao" id="config_personalizacao">
+                    <h1>Personalização</h1>
+                    <p>Use o botão no topo para alternar entre modo claro e modo escuro.</p>
+                </div>
+            </section>
+        </main>
+        <script src="assets/JS/main.js"></script>
+    </main>
+</body>
+
+</html>
